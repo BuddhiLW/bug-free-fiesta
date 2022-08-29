@@ -17,18 +17,18 @@
   "Display the certification for an activity."
   [id header img title descr link date modal cert-data values]
   [:div.col
-   [:div.card.shadow {:key id}
+   [:div.card.shadow.h-100 {:key id}
     [:h1.card-header.row.align-items
      [:div.col header]
      [:div.col (modal-add cert-data values modal)]]
-    [:div.shadow-sm.mb-1.bg-body.rounded {:on-click #(helpers/toggle-modal {:active true :cert cert-data}
+    [:div.shadow-sm.mb-1.bg-body.rounded.ratio.ratio-16x9 {:on-click #(helpers/toggle-modal {:active true :cert cert-data}
                                                                            modal
                                                                            values)}
-     [:img.card-img-top {:src img
-                         :alt title
-                         :on-click #(helpers/toggle-modal {:active true :cert cert-data}
-                                                          modal
-                                                          values)}]]
+     [:img.card-img-top.img-fluid.rounded.img-thumbnail {:src img
+                                                         :alt title
+                                                         :on-click #(helpers/toggle-modal {:active true :cert cert-data}
+                                                                                          modal
+                                                                                          values)}]]
     [:div.card-body
      [:div.text-light.bg-dark.bg-gradient.border.text-center
       [:h3.card-title [:a.text-light {:href link} title]]]

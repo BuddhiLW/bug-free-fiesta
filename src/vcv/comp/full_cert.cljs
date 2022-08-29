@@ -14,8 +14,8 @@
                                          :link "" :date ""}))}]]
 
     [:div.shadow-sm.mb-1.bg-body.rounded
-     [:img.card-img-top {:src img
-                         :alt title}]]
+     [:img.card-img-top.resize {:src img
+                                :alt title}]]
     [:div.card-body
      [:div.text-light.bg-dark.bg-gradient.border.text-center
       [:h3.card-title [:a.text-light {:href link} title]]]
