@@ -12,7 +12,6 @@
                                      modal
                                      values)}
    "Click to expand"])
-;; [:i.bi.bi-back])
 
 (defn cert
   "Display the certification for an activity."
@@ -49,6 +48,3 @@
        [:div.row.row-cols-1.row-cols-md-2.g-4
         (for [{:keys [id header img title descr link date] :as cert-data} (vals @state/certs)]
           (cert id header img title descr link date modal cert-data values))]])))
-          ;; (do
-              ;; (js/console.log (str (:institution cert-data)))
-;; {:institution "University of California - UCI", :tags "OOP, Methods, Interfaces, Concurrency, Paralellism", :date "Agust, 2022", :header "Golang", :title "Programming in Go", :link "https://www.coursera.org/specializations/google-golang", :id :cert-01, :descr "A course in which one learns about Data Structures and Algorithms in Golang, as well as how to change process computations, using Parallelism and Concurrency.", :img "https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~GUEFF86NTX33/CERTIFICATE_LANDING_PAGE~GUEFF86NTX33.jpeg", :platform "Coursera"}

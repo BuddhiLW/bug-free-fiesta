@@ -1,29 +1,39 @@
 (ns vcv.comp.full-cert
   (:require [vcv.helpers :as helpers]))
 
-(defn full-cert-footer
-  "Display the Cancel and Save buttons as well as act, on-click."
-  [modal values]
-  [:div.modal__footer
-   [:button.btn.btn-secondary
-    {:on-click #(do (helpers/toggle-modal {:active false} modal)
-                    (reset! values {:id (str "cert-" (random-uuid)) :header "" :title ""
-                                         :img "" :institution "" :platform "" :descr "" :tags ""
-                                         :link "" :date ""}))}
-    "-> Main page"]])
-
-(defn full-cert
-  [modal values]
-  [:div.modal (when (:active @modal) {:class "active"})
-   [:div.modal-dialog
-    [:div.modal-content
-     [:div.modal-header
-      [:h5.modal-title (str @values)]
-      [:button.btn-close
+(defn mini-cert
+  [id header img title descr link date values modal]
+  [:div.col
+   [:div.card.shadow {:key id}
+    [:h1.card-header.row.align-items
+     [:div.col header]
+     [:button.btn-close
         {:on-click #(do (helpers/toggle-modal {:active false} modal)
                         (reset! values {:id (str "cert-" (random-uuid)) :header "" :title ""
                                          :img "" :institution "" :platform "" :descr "" :tags ""
                                          :link "" :date ""}))}]]
-     [:div.modal-body
-      [:p "Modal body text goes here."]]
-     (full-cert-footer modal values)]]])
+
+    [:div.shadow-sm.mb-1.bg-body.rounded
+     [:img.card-img-top {:src img
+                         :alt title}]]
+    [:div.card-body
+     [:div.text-light.bg-dark.bg-gradient.border.text-center
+      [:h3.card-title [:a.text-light {:href link} title]]]
+     [:p.card-text descr]]
+    [:div.card-footer.row
+     [:small.text-muted.col-9 date]
+     [:button.btn.btn-secondary.col-3
+      {:on-click #(do (helpers/toggle-modal {:active false} modal)
+                      (reset! values {:id (str "cert-" (random-uuid)) :header "" :title ""
+                                           :img "" :institution "" :platform "" :descr "" :tags ""
+                                           :link "" :date ""}))}
+      "Back to main page"]]]])
+
+(defn full-cert
+  [modal values]
+  [:div.modal.modal-xl (when (:active @modal) {:class "active"})
+   [:div.modal-dialog.modal-fullscreen
+    [:div.modal-content
+     (let [{:keys [id header img title descr link date] :as values} @values]
+      (mini-cert id header img title descr link date values modal))]]])
+     ;; (full-cert-footer modal values)]]])
