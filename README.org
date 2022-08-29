@@ -1,0 +1,27 @@
+#+TITLE: VCV - Virtual Curriculum Vitae
+* TOC :toc:
+- [[#overview][Overview]]
+- [[#setup][Setup]]
+- [[#license][License]]
+
+* Overview
+Virtual Curriculum Vitae containing all my professional certificates. Project written with CSS Bootstrap and Reagent (Clojure's wrap of React).
+
+* Setup
+To get an interactive development environment run:
+
+#+begin_src shell
+npm install && lein figwheel
+#+end_src
+
+And open your browser at http://localhost:3449/index.html (generally, it will open automatically)
+
+* License
+[[http://creativecommons.org/licenses/by-sa/4.0/][https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg]]
+
+[[http://creativecommons.org/licenses/by-sa/4.0/][https://licensebuttons.net/l/by-sa/4.0/88x31.png]]
+
+This work is licensed under a
+[[http://creativecommons.org/licenses/by-sa/4.0/][Creative Commons
+Attribution-ShareAlike 4.0 International License]].
+
