@@ -11,7 +11,7 @@ Virtual Curriculum Vitae containing all my professional certificates. Project wr
 To get an interactive development environment run:
 
 #+begin_src shell
-npm install && lein figwheel
+npm install && lein deps && lein figwheel
 #+end_src
 
 And open your browser at http://localhost:3449/index.html (generally, it will open automatically)
