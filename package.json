@@ -1,5 +1,13 @@
 {
+  "name": "VCV",
+  "version": "1.0.0",
+  "homepage": "https//buddhilw.github.io",
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
   "devDependencies": {
+    "gh-pages": "^4.0.0",
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.11"
   },
