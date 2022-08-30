@@ -1,0 +1,111 @@
+.modal {
+  align-items: center;
+  bottom: 0;
+  display: none;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  left: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0.4rem;
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+
+.modal:target,
+.modal.active {
+  display: flex;
+  display: -ms-flexbox;
+  opacity: 1;
+  z-index: 400;
+}
+
+.modal:target .modal__overlay,
+.modal.active .modal__overlay {
+  background: var(--gray);
+  bottom: 0;
+  cursor: default;
+  display: block;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.modal:target .modal__container,
+.modal.active .modal__container {
+  box-shadow: none;
+  max-width: 960px;
+  width: 100%;
+  z-index: 1;
+}
+
+.modal__container {
+  background: var(--gray);
+  border-radius: 1rem;
+  box-shadow: 0 0.2rem 0.5rem rgba(69, 77, 93, 0.3);
+  display: block;
+  padding: 0 0.8rem;
+  text-align: left;
+}
+
+.modal__container .modal__header .modal__title {
+  color: var(--primary);
+  background: #fff;
+}
+
+@media (min-width: 768px) {
+  .modal__container .modal__body {
+    min-height: 450px;
+  }
+  .modal__container .modal__body .checkout {
+    padding-top: 4rem;
+  }
+}
+
+.modal__container .modal__body {
+  max-height: 66vh;
+  overflow-y: auto;
+  padding: 0.4rem;
+  position: relative;
+}
+
+.modal__container .modal__footer {
+  padding-bottom: 1.2rem;
+  text-align: right;
+}
+
+@media (max-width: 768px) {
+  .modal__container .modal__header {
+    position: fixed;
+    top: 1.4rem;
+    right: 1.8rem;
+    left: 1.8rem;
+    background-color: #fff;
+  }
+
+  .modal__container .modal__footer {
+    position: fixed;
+    bottom: 0.4rem;
+    right: 1.8rem;
+    left: 1.8rem;
+  }
+}
+
+.resize {
+  width: auto;
+  max-height: 70vh;
+  margin: auto;
+  display: block; /* remove extra space below image */
+}
+
+@media only screen and (min-width: 1200px) {
+  .resize {
+    max-width: 80vw;
+    max-height: auto;
+    margin: auto;
+    display: block; /* remove extra space below image */
+  }
+}
