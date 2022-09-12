@@ -23,7 +23,7 @@
                        :platform "EF Education"
                        :descr "English test, based on European Standards - 78 points, giving the C2 score, at the maximum-range. \n LINK: https://www.efset.org/cert/hqg62J"
                        :tags "English, European Standard, C2"
-                       :date ", 2022"}
+                       :date "April 16, 2022"}
              :cert-04 {:id :cert-04
                        :title "Programming in Python"
                        :header "Python"
