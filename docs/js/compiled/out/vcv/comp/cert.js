@@ -16,8 +16,8 @@ return vcv.helpers.toggle_modal.call(null,new cljs.core.PersistentArrayMap(null,
 /**
  * Display the certification for an activity.
  */
-vcv.comp.cert.cert = (function vcv$comp$cert$cert(id,header,img,title,descr,link,date,modal,cert_data,values){
-return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div.col","div.col",-1800797011),new cljs.core.PersistentVector(null, 6, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div.card.shadow.h-100","div.card.shadow.h-100",1341418380),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"key","key",-1516042587),id], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"h1.card-header.row.align-items","h1.card-header.row.align-items",-319409385),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div.col","div.col",-1800797011),header], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div.col","div.col",-1800797011),vcv.comp.cert.modal_add.call(null,cert_data,values,modal)], null)], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div.shadow-sm.mb-1.bg-body.rounded.ratio.ratio-16x9","div.shadow-sm.mb-1.bg-body.rounded.ratio.ratio-16x9",-1652373909),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"on-click","on-click",1632826543),(function (){
+vcv.comp.cert.cert = (function vcv$comp$cert$cert(id,header,img,title,inst,descr,link,date,modal,cert_data,values){
+return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div.col","div.col",-1800797011),new cljs.core.PersistentVector(null, 6, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div.card.shadow.h-100","div.card.shadow.h-100",1341418380),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"key","key",-1516042587),id], null),new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"h1.card-header.row.align-items.align-middle","h1.card-header.row.align-items.align-middle",-647431948),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div.col","div.col",-1800797011),header], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div.col-5","div.col-5",-2108746862),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"span.test.text-center.w-100.align-middle","span.test.text-center.w-100.align-middle",-91934125),inst], null)], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div.col","div.col",-1800797011),vcv.comp.cert.modal_add.call(null,cert_data,values,modal)], null)], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div.shadow-sm.mb-1.bg-body.rounded.ratio.ratio-16x9","div.shadow-sm.mb-1.bg-body.rounded.ratio.ratio-16x9",-1652373909),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"on-click","on-click",1632826543),(function (){
 return vcv.helpers.toggle_modal.call(null,new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"active","active",1895962068),true,new cljs.core.Keyword(null,"cert","cert",648499243),cert_data], null),modal,values);
 })], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"img.card-img-top.img-fluid.rounded.img-thumbnail","img.card-img-top.img-fluid.rounded.img-thumbnail",-1299615291),new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"src","src",-1651076051),img,new cljs.core.Keyword(null,"alt","alt",-3214426),title,new cljs.core.Keyword(null,"on-click","on-click",1632826543),(function (){
 return vcv.helpers.toggle_modal.call(null,new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"active","active",1895962068),true,new cljs.core.Keyword(null,"cert","cert",648499243),cert_data], null),modal,values);
@@ -48,10 +48,11 @@ var id = cljs.core.get.call(null,map__22612__$1,new cljs.core.Keyword(null,"id",
 var header = cljs.core.get.call(null,map__22612__$1,new cljs.core.Keyword(null,"header","header",119441134));
 var img = cljs.core.get.call(null,map__22612__$1,new cljs.core.Keyword(null,"img","img",1442687358));
 var title = cljs.core.get.call(null,map__22612__$1,new cljs.core.Keyword(null,"title","title",636505583));
+var institution = cljs.core.get.call(null,map__22612__$1,new cljs.core.Keyword(null,"institution","institution",-70023072));
 var descr = cljs.core.get.call(null,map__22612__$1,new cljs.core.Keyword(null,"descr","descr",-574015785));
 var link = cljs.core.get.call(null,map__22612__$1,new cljs.core.Keyword(null,"link","link",-1769163468));
 var date = cljs.core.get.call(null,map__22612__$1,new cljs.core.Keyword(null,"date","date",-1463434462));
-cljs.core.chunk_append.call(null,b__22611,vcv.comp.cert.cert.call(null,id,header,img,title,descr,link,date,modal,cert_data,values));
+cljs.core.chunk_append.call(null,b__22611,vcv.comp.cert.cert.call(null,id,header,img,title,institution,descr,link,date,modal,cert_data,values));
 
 var G__22616 = (i__22610 + (1));
 i__22610 = G__22616;
@@ -74,10 +75,11 @@ var id = cljs.core.get.call(null,map__22614__$1,new cljs.core.Keyword(null,"id",
 var header = cljs.core.get.call(null,map__22614__$1,new cljs.core.Keyword(null,"header","header",119441134));
 var img = cljs.core.get.call(null,map__22614__$1,new cljs.core.Keyword(null,"img","img",1442687358));
 var title = cljs.core.get.call(null,map__22614__$1,new cljs.core.Keyword(null,"title","title",636505583));
+var institution = cljs.core.get.call(null,map__22614__$1,new cljs.core.Keyword(null,"institution","institution",-70023072));
 var descr = cljs.core.get.call(null,map__22614__$1,new cljs.core.Keyword(null,"descr","descr",-574015785));
 var link = cljs.core.get.call(null,map__22614__$1,new cljs.core.Keyword(null,"link","link",-1769163468));
 var date = cljs.core.get.call(null,map__22614__$1,new cljs.core.Keyword(null,"date","date",-1463434462));
-return cljs.core.cons.call(null,vcv.comp.cert.cert.call(null,id,header,img,title,descr,link,date,modal,cert_data,values),vcv$comp$cert$certs_$_iter__22608.call(null,cljs.core.rest.call(null,s__22609__$2)));
+return cljs.core.cons.call(null,vcv.comp.cert.cert.call(null,id,header,img,title,institution,descr,link,date,modal,cert_data,values),vcv$comp$cert$certs_$_iter__22608.call(null,cljs.core.rest.call(null,s__22609__$2)));
 }
 } else {
 return null;
@@ -91,4 +93,4 @@ return iter__4529__auto__.call(null,cljs.core.vals.call(null,cljs.core.deref.cal
 });
 });
 
-//# sourceMappingURL=cert.js.map?rel=1661828486876
+//# sourceMappingURL=cert.js.map?rel=1663005398391

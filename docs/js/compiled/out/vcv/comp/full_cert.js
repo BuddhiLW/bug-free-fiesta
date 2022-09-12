@@ -28,4 +28,4 @@ return vcv.comp.full_cert.mini_cert.call(null,id,header,img,title,descr,link,dat
 })()], null)], null)], null);
 });
 
-//# sourceMappingURL=full_cert.js.map?rel=1661828486851
+//# sourceMappingURL=full_cert.js.map?rel=1663005398358

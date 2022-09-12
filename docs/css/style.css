@@ -101,6 +101,12 @@
   display: block; /* remove extra space below image */
 }
 
+.test {
+  margin: auto;
+  font-size: 0.6em;
+  display: inline-block;
+}
+
 @media only screen and (min-width: 1200px) {
   .resize {
     max-width: 80vw;

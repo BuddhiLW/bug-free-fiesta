@@ -24,4 +24,4 @@ return null;
 });
 vcv.core.mount_app_element.call(null);
 
-//# sourceMappingURL=core.js.map?rel=1661828486944
+//# sourceMappingURL=core.js.map?rel=1663005398471
