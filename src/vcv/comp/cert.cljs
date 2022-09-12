@@ -15,15 +15,16 @@
 
 (defn cert
   "Display the certification for an activity."
-  [id header img title descr link date modal cert-data values]
+  [id header img title inst descr link date modal cert-data values]
   [:div.col
    [:div.card.shadow.h-100 {:key id}
-    [:h1.card-header.row.align-items
+    [:h1.card-header.row.align-items.align-middle
      [:div.col header]
+     [:div.col-5 [:span.test.text-center.w-100.align-middle inst]]
      [:div.col (modal-add cert-data values modal)]]
     [:div.shadow-sm.mb-1.bg-body.rounded.ratio.ratio-16x9 {:on-click #(helpers/toggle-modal {:active true :cert cert-data}
-                                                                           modal
-                                                                           values)}
+                                                                                            modal
+                                                                                            values)}
      [:img.card-img-top.img-fluid.rounded.img-thumbnail {:src img
                                                          :alt title
                                                          :on-click #(helpers/toggle-modal {:active true :cert cert-data}
@@ -46,5 +47,5 @@
       [:main.container
        (full-cert modal values)
        [:div.row.row-cols-1.row-cols-md-2.g-4
-        (for [{:keys [id header img title descr link date] :as cert-data} (vals @state/certs)]
-          (cert id header img title descr link date modal cert-data values))]])))
+        (for [{:keys [id header img title institution descr link date] :as cert-data} (vals @state/certs)]
+          (cert id header img title institution descr link date modal cert-data values))]])))
