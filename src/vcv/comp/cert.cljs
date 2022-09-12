@@ -18,9 +18,9 @@
   [id header img title inst descr link date modal cert-data values]
   [:div.col
    [:div.card.shadow.h-100 {:key id}
-    [:h1.card-header.row.align-items.align-middle
-     [:div.col header]
-     [:div.col-5 [:span.test.text-center.w-100.align-middle inst]]
+    [:h1.card-header.row-cert.align-items.align-middle.border-bottom
+     [:div.col.h1 header]
+     [:div.col-5 [:span.test.text-center.w-100 inst]]
      [:div.col (modal-add cert-data values modal)]]
     [:div.shadow-sm.mb-1.bg-body.rounded.ratio.ratio-16x9 {:on-click #(helpers/toggle-modal {:active true :cert cert-data}
                                                                                             modal
@@ -44,8 +44,9 @@
                         :img "" :institution "" :platform "" :descr "" :tags ""
                         :link "" :date ""})]
     (fn []
-      [:main.container
-       (full-cert modal values)
-       [:div.row.row-cols-1.row-cols-md-2.g-4
-        (for [{:keys [id header img title institution descr link date] :as cert-data} (vals @state/certs)]
-          (cert id header img title institution descr link date modal cert-data values))]])))
+      [:div.row.bg-main.bg-opacity-10.pt-3
+       [:main.container
+        (full-cert modal values)
+        [:div.row.row-cols-1.row-cols-md-2.g-4
+         (for [{:keys [id header img title institution descr link date] :as cert-data} (vals @state/certs)]
+           (cert id header img title institution descr link date modal cert-data values))]]])))

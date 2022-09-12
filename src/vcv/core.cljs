@@ -1,12 +1,16 @@
 (ns vcv.core
   (:require
-        [goog.dom :as gdom]
-        [reagent.dom :as rdom]
-        [vcv.comp.cert :refer [certs]]))
-
+   [goog.dom :as gdom]
+   [reagent.dom :as rdom]
+   [vcv.comp.cert :refer [certs]]
+   [vcv.comp.header :refer [header]]
+   [vcv.comp.footer :refer [footer]]))
 
 (defn app []
-  [certs])
+  [:div.container
+   [header]
+   [certs]
+   [footer]])
 
 (defn get-app-element []
   (gdom/getElement "app"))
@@ -32,4 +36,3 @@
   ;; optionally touch your app-state to force rerendering depending on
   ;; your application
   ;; (swap! app-state update-in [:__figwheel_counter] inc)
-

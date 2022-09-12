@@ -107,6 +107,35 @@
   display: inline-block;
 }
 
+.bg-main {
+  background-color: rgb(241 245 249);
+}
+.mt-card {
+  margin-top: 6rem !important;
+}
+
+/* @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Dancing+Script:wght@400;500;600;700&family=Indie+Flower&family=Ms+Madi&family=Poiret+One&family=Satisfy&display=swap"); */
+.cert-font {
+  /* font-family: "Caveat", cursive; */
+  /* font-family: "Dancing Script", cursive; */
+  /* font-family: "Indie Flower", cursive; */
+  /* font-family: "Ms Madi", cursive; */
+  font-family: "Poiret One", cursive;
+  /* font-family: "Satisfy", cursive; */
+  /* font-weight: 200; */
+  font-size: 6em;
+}
+
+.row-cert {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * var(--bs-gutter-y));
+  /* margin-right: calc(-0.5 * var(--bs-gutter-x)); */
+  /* margin-left: calc(-0.5 * var(--bs-gutter-x)); */
+}
+
 @media only screen and (min-width: 1200px) {
   .resize {
     max-width: 80vw;
