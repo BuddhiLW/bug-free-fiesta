@@ -69,7 +69,7 @@
                        :platform "Coursera"
                        :descr "A course in which one learns how to lauch a site, using Docker."
                        :tags "Docker, Web Architecture"
-                       :date "Setember 6, 2022"}
+                       :date "Setember 6, 2020"}
 
              :cert-09 {:id :cert-09
                        :title "Getting Started with Go"
