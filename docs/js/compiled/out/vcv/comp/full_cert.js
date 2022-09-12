@@ -3,7 +3,7 @@ goog.provide('vcv.comp.full_cert');
 goog.require('cljs.core');
 goog.require('vcv.helpers');
 vcv.comp.full_cert.mini_cert = (function vcv$comp$full_cert$mini_cert(id,header,img,title,descr,link,date,values,modal){
-return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div.col-xxl.align-self-center","div.col-xxl.align-self-center",874062890),new cljs.core.PersistentVector(null, 6, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div.card.shadow","div.card.shadow",89727657),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"key","key",-1516042587),id], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"h1.card-header.row.align-items","h1.card-header.row.align-items",-319409385),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div.col","div.col",-1800797011),header], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"button.btn-close","button.btn-close",-594363279),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"on-click","on-click",1632826543),(function (){
+return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div.col-xxl.align-self-center.positive-relative","div.col-xxl.align-self-center.positive-relative",1736847934),new cljs.core.PersistentVector(null, 6, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div.card.shadow.mt-card","div.card.shadow.mt-card",-17591076),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"key","key",-1516042587),id], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"h1.card-header.row.align-items","h1.card-header.row.align-items",-319409385),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div.col","div.col",-1800797011),header], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"button.btn-close","button.btn-close",-594363279),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"on-click","on-click",1632826543),(function (){
 vcv.helpers.toggle_modal.call(null,new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"active","active",1895962068),false], null),modal);
 
 return cljs.core.reset_BANG_.call(null,values,cljs.core.PersistentHashMap.fromArrays([new cljs.core.Keyword(null,"institution","institution",-70023072),new cljs.core.Keyword(null,"tags","tags",1771418977),new cljs.core.Keyword(null,"date","date",-1463434462),new cljs.core.Keyword(null,"header","header",119441134),new cljs.core.Keyword(null,"title","title",636505583),new cljs.core.Keyword(null,"link","link",-1769163468),new cljs.core.Keyword(null,"id","id",-1388402092),new cljs.core.Keyword(null,"descr","descr",-574015785),new cljs.core.Keyword(null,"img","img",1442687358),new cljs.core.Keyword(null,"platform","platform",-1086422114)],["","","","","","",["cert-",cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid.call(null))].join(''),"","",""]));
@@ -14,18 +14,18 @@ return cljs.core.reset_BANG_.call(null,values,cljs.core.PersistentHashMap.fromAr
 })], null),"Back to main page"], null)], null)], null)], null);
 });
 vcv.comp.full_cert.full_cert = (function vcv$comp$full_cert$full_cert(modal,values){
-return new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div.modal.modal-xl","div.modal.modal-xl",-293886784),(cljs.core.truth_(new cljs.core.Keyword(null,"active","active",1895962068).cljs$core$IFn$_invoke$arity$1(cljs.core.deref.call(null,modal)))?new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"class","class",-2030961996),"active"], null):null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div.modal-dialog.modal-fullscreen","div.modal-dialog.modal-fullscreen",1439964213),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div.modal-content","div.modal-content",-83470844),(function (){var map__22602 = cljs.core.deref.call(null,values);
-var map__22602__$1 = (((((!((map__22602 == null))))?(((((map__22602.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__22602.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__22602):map__22602);
-var values__$1 = map__22602__$1;
-var id = cljs.core.get.call(null,map__22602__$1,new cljs.core.Keyword(null,"id","id",-1388402092));
-var header = cljs.core.get.call(null,map__22602__$1,new cljs.core.Keyword(null,"header","header",119441134));
-var img = cljs.core.get.call(null,map__22602__$1,new cljs.core.Keyword(null,"img","img",1442687358));
-var title = cljs.core.get.call(null,map__22602__$1,new cljs.core.Keyword(null,"title","title",636505583));
-var descr = cljs.core.get.call(null,map__22602__$1,new cljs.core.Keyword(null,"descr","descr",-574015785));
-var link = cljs.core.get.call(null,map__22602__$1,new cljs.core.Keyword(null,"link","link",-1769163468));
-var date = cljs.core.get.call(null,map__22602__$1,new cljs.core.Keyword(null,"date","date",-1463434462));
+return new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div.modal.modal-xl","div.modal.modal-xl",-293886784),(cljs.core.truth_(new cljs.core.Keyword(null,"active","active",1895962068).cljs$core$IFn$_invoke$arity$1(cljs.core.deref.call(null,modal)))?new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"class","class",-2030961996),"active"], null):null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div.modal-dialog.modal-fullscreen","div.modal-dialog.modal-fullscreen",1439964213),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div.modal-content","div.modal-content",-83470844),(function (){var map__30511 = cljs.core.deref.call(null,values);
+var map__30511__$1 = (((((!((map__30511 == null))))?(((((map__30511.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__30511.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__30511):map__30511);
+var values__$1 = map__30511__$1;
+var id = cljs.core.get.call(null,map__30511__$1,new cljs.core.Keyword(null,"id","id",-1388402092));
+var header = cljs.core.get.call(null,map__30511__$1,new cljs.core.Keyword(null,"header","header",119441134));
+var img = cljs.core.get.call(null,map__30511__$1,new cljs.core.Keyword(null,"img","img",1442687358));
+var title = cljs.core.get.call(null,map__30511__$1,new cljs.core.Keyword(null,"title","title",636505583));
+var descr = cljs.core.get.call(null,map__30511__$1,new cljs.core.Keyword(null,"descr","descr",-574015785));
+var link = cljs.core.get.call(null,map__30511__$1,new cljs.core.Keyword(null,"link","link",-1769163468));
+var date = cljs.core.get.call(null,map__30511__$1,new cljs.core.Keyword(null,"date","date",-1463434462));
 return vcv.comp.full_cert.mini_cert.call(null,id,header,img,title,descr,link,date,values__$1,modal);
 })()], null)], null)], null);
 });
 
-//# sourceMappingURL=full_cert.js.map?rel=1663005398358
+//# sourceMappingURL=full_cert.js.map?rel=1663016512333

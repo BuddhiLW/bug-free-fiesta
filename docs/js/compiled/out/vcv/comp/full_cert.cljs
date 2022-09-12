@@ -3,8 +3,8 @@
 
 (defn mini-cert
   [id header img title descr link date values modal]
-  [:div.col-xxl.align-self-center
-   [:div.card.shadow {:key id}
+  [:div.col-xxl.align-self-center.positive-relative
+   [:div.card.shadow.mt-card {:key id}
     [:h1.card-header.row.align-items
      [:div.col header]
      [:button.btn-close

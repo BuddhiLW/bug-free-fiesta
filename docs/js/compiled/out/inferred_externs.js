@@ -16,6 +16,8 @@ Object.onChange;
 Object.useState;
 Object.memo;
 Object.Fragment;
+Object.index;
+Object.exec;
 Object.ref;
 Object.ref.hasOwnProperty;
 Object.ref.current;
