@@ -19,9 +19,9 @@
                        :title "EF SET Score - C2 (Maximum)"
                        :header "English"
                        :img "https://cdn.efset.org/efset-widget/img/certificate_78.png"
-                       :institution "University of California - UCI"
+                       :institution "EF Education First"
                        :platform "EF Education"
-                       :descr "English test, based on European Standards - 78 points, giving the C2 score, at the maximum-range."
+                       :descr "English test, based on European Standards - 78 points, giving the C2 score, at the maximum-range. \n LINK: https://www.efset.org/cert/hqg62J"
                        :tags "English, European Standard, C2"
                        :date ", 2022"}
              :cert-04 {:id :cert-04
@@ -39,8 +39,8 @@
                        :img "https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~S4SD93X9WM34/CERTIFICATE_LANDING_PAGE~S4SD93X9WM34.jpeg"
                        :institution "Meta Inc."
                        :platform "Coursera"
-                       :descr "A course in which one learns about Data Structures and Algorithms in Golang, as well as how to change process computations, using Parallelism and Concurrency."
-                       :tags "OOP, Methods, Interfaces, Concurrency, Paralellism"
+                       :descr "A course in which one learns about Version Control, Git and Github."
+                       :tags "Version Control, Git, Github."
                        :date "Agust, 2022"}
              :cert-06 {:id :cert-06
                        :title "Concurrency in Go"
