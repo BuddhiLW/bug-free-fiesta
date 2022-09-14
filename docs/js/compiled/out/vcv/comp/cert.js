@@ -27,35 +27,35 @@ vcv.comp.cert.certs = (function vcv$comp$cert$certs(){
 var modal = reagent.core.atom.call(null,new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"active","active",1895962068),false], null));
 var values = reagent.core.atom.call(null,cljs.core.PersistentHashMap.fromArrays([new cljs.core.Keyword(null,"institution","institution",-70023072),new cljs.core.Keyword(null,"tags","tags",1771418977),new cljs.core.Keyword(null,"date","date",-1463434462),new cljs.core.Keyword(null,"header","header",119441134),new cljs.core.Keyword(null,"title","title",636505583),new cljs.core.Keyword(null,"link","link",-1769163468),new cljs.core.Keyword(null,"id","id",-1388402092),new cljs.core.Keyword(null,"descr","descr",-574015785),new cljs.core.Keyword(null,"img","img",1442687358),new cljs.core.Keyword(null,"platform","platform",-1086422114)],["","","","","","",["cert-",cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid.call(null))].join(''),"","",""]));
 return (function (){
-return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div.row.bg-main.bg-opacity-10.pt-3","div.row.bg-main.bg-opacity-10.pt-3",150356657),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"main.container","main.container",-815859223),vcv.comp.full_cert.full_cert.call(null,modal,values),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div.row.row-cols-1.row-cols-md-2.g-4","div.row.row-cols-1.row-cols-md-2.g-4",1933994098),(function (){var iter__4529__auto__ = (function vcv$comp$cert$certs_$_iter__31047(s__31048){
+return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div.row.bg-main.bg-opacity-10.pt-3","div.row.bg-main.bg-opacity-10.pt-3",150356657),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"main.container","main.container",-815859223),vcv.comp.full_cert.full_cert.call(null,modal,values),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div.row.row-cols-1.row-cols-md-2.g-4","div.row.row-cols-1.row-cols-md-2.g-4",1933994098),(function (){var iter__4529__auto__ = (function vcv$comp$cert$certs_$_iter__29921(s__29922){
 return (new cljs.core.LazySeq(null,(function (){
-var s__31048__$1 = s__31048;
+var s__29922__$1 = s__29922;
 while(true){
-var temp__5720__auto__ = cljs.core.seq.call(null,s__31048__$1);
+var temp__5720__auto__ = cljs.core.seq.call(null,s__29922__$1);
 if(temp__5720__auto__){
-var s__31048__$2 = temp__5720__auto__;
-if(cljs.core.chunked_seq_QMARK_.call(null,s__31048__$2)){
-var c__4527__auto__ = cljs.core.chunk_first.call(null,s__31048__$2);
+var s__29922__$2 = temp__5720__auto__;
+if(cljs.core.chunked_seq_QMARK_.call(null,s__29922__$2)){
+var c__4527__auto__ = cljs.core.chunk_first.call(null,s__29922__$2);
 var size__4528__auto__ = cljs.core.count.call(null,c__4527__auto__);
-var b__31050 = cljs.core.chunk_buffer.call(null,size__4528__auto__);
-if((function (){var i__31049 = (0);
+var b__29924 = cljs.core.chunk_buffer.call(null,size__4528__auto__);
+if((function (){var i__29923 = (0);
 while(true){
-if((i__31049 < size__4528__auto__)){
-var map__31051 = cljs.core._nth.call(null,c__4527__auto__,i__31049);
-var map__31051__$1 = (((((!((map__31051 == null))))?(((((map__31051.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__31051.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__31051):map__31051);
-var cert_data = map__31051__$1;
-var id = cljs.core.get.call(null,map__31051__$1,new cljs.core.Keyword(null,"id","id",-1388402092));
-var header = cljs.core.get.call(null,map__31051__$1,new cljs.core.Keyword(null,"header","header",119441134));
-var img = cljs.core.get.call(null,map__31051__$1,new cljs.core.Keyword(null,"img","img",1442687358));
-var title = cljs.core.get.call(null,map__31051__$1,new cljs.core.Keyword(null,"title","title",636505583));
-var institution = cljs.core.get.call(null,map__31051__$1,new cljs.core.Keyword(null,"institution","institution",-70023072));
-var descr = cljs.core.get.call(null,map__31051__$1,new cljs.core.Keyword(null,"descr","descr",-574015785));
-var link = cljs.core.get.call(null,map__31051__$1,new cljs.core.Keyword(null,"link","link",-1769163468));
-var date = cljs.core.get.call(null,map__31051__$1,new cljs.core.Keyword(null,"date","date",-1463434462));
-cljs.core.chunk_append.call(null,b__31050,vcv.comp.cert.cert.call(null,id,header,img,title,institution,descr,link,date,modal,cert_data,values));
+if((i__29923 < size__4528__auto__)){
+var map__29925 = cljs.core._nth.call(null,c__4527__auto__,i__29923);
+var map__29925__$1 = (((((!((map__29925 == null))))?(((((map__29925.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__29925.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__29925):map__29925);
+var cert_data = map__29925__$1;
+var id = cljs.core.get.call(null,map__29925__$1,new cljs.core.Keyword(null,"id","id",-1388402092));
+var header = cljs.core.get.call(null,map__29925__$1,new cljs.core.Keyword(null,"header","header",119441134));
+var img = cljs.core.get.call(null,map__29925__$1,new cljs.core.Keyword(null,"img","img",1442687358));
+var title = cljs.core.get.call(null,map__29925__$1,new cljs.core.Keyword(null,"title","title",636505583));
+var institution = cljs.core.get.call(null,map__29925__$1,new cljs.core.Keyword(null,"institution","institution",-70023072));
+var descr = cljs.core.get.call(null,map__29925__$1,new cljs.core.Keyword(null,"descr","descr",-574015785));
+var link = cljs.core.get.call(null,map__29925__$1,new cljs.core.Keyword(null,"link","link",-1769163468));
+var date = cljs.core.get.call(null,map__29925__$1,new cljs.core.Keyword(null,"date","date",-1463434462));
+cljs.core.chunk_append.call(null,b__29924,vcv.comp.cert.cert.call(null,id,header,img,title,institution,descr,link,date,modal,cert_data,values));
 
-var G__31055 = (i__31049 + (1));
-i__31049 = G__31055;
+var G__29929 = (i__29923 + (1));
+i__29923 = G__29929;
 continue;
 } else {
 return true;
@@ -63,23 +63,23 @@ return true;
 break;
 }
 })()){
-return cljs.core.chunk_cons.call(null,cljs.core.chunk.call(null,b__31050),vcv$comp$cert$certs_$_iter__31047.call(null,cljs.core.chunk_rest.call(null,s__31048__$2)));
+return cljs.core.chunk_cons.call(null,cljs.core.chunk.call(null,b__29924),vcv$comp$cert$certs_$_iter__29921.call(null,cljs.core.chunk_rest.call(null,s__29922__$2)));
 } else {
-return cljs.core.chunk_cons.call(null,cljs.core.chunk.call(null,b__31050),null);
+return cljs.core.chunk_cons.call(null,cljs.core.chunk.call(null,b__29924),null);
 }
 } else {
-var map__31053 = cljs.core.first.call(null,s__31048__$2);
-var map__31053__$1 = (((((!((map__31053 == null))))?(((((map__31053.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__31053.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__31053):map__31053);
-var cert_data = map__31053__$1;
-var id = cljs.core.get.call(null,map__31053__$1,new cljs.core.Keyword(null,"id","id",-1388402092));
-var header = cljs.core.get.call(null,map__31053__$1,new cljs.core.Keyword(null,"header","header",119441134));
-var img = cljs.core.get.call(null,map__31053__$1,new cljs.core.Keyword(null,"img","img",1442687358));
-var title = cljs.core.get.call(null,map__31053__$1,new cljs.core.Keyword(null,"title","title",636505583));
-var institution = cljs.core.get.call(null,map__31053__$1,new cljs.core.Keyword(null,"institution","institution",-70023072));
-var descr = cljs.core.get.call(null,map__31053__$1,new cljs.core.Keyword(null,"descr","descr",-574015785));
-var link = cljs.core.get.call(null,map__31053__$1,new cljs.core.Keyword(null,"link","link",-1769163468));
-var date = cljs.core.get.call(null,map__31053__$1,new cljs.core.Keyword(null,"date","date",-1463434462));
-return cljs.core.cons.call(null,vcv.comp.cert.cert.call(null,id,header,img,title,institution,descr,link,date,modal,cert_data,values),vcv$comp$cert$certs_$_iter__31047.call(null,cljs.core.rest.call(null,s__31048__$2)));
+var map__29927 = cljs.core.first.call(null,s__29922__$2);
+var map__29927__$1 = (((((!((map__29927 == null))))?(((((map__29927.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__29927.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__29927):map__29927);
+var cert_data = map__29927__$1;
+var id = cljs.core.get.call(null,map__29927__$1,new cljs.core.Keyword(null,"id","id",-1388402092));
+var header = cljs.core.get.call(null,map__29927__$1,new cljs.core.Keyword(null,"header","header",119441134));
+var img = cljs.core.get.call(null,map__29927__$1,new cljs.core.Keyword(null,"img","img",1442687358));
+var title = cljs.core.get.call(null,map__29927__$1,new cljs.core.Keyword(null,"title","title",636505583));
+var institution = cljs.core.get.call(null,map__29927__$1,new cljs.core.Keyword(null,"institution","institution",-70023072));
+var descr = cljs.core.get.call(null,map__29927__$1,new cljs.core.Keyword(null,"descr","descr",-574015785));
+var link = cljs.core.get.call(null,map__29927__$1,new cljs.core.Keyword(null,"link","link",-1769163468));
+var date = cljs.core.get.call(null,map__29927__$1,new cljs.core.Keyword(null,"date","date",-1463434462));
+return cljs.core.cons.call(null,vcv.comp.cert.cert.call(null,id,header,img,title,institution,descr,link,date,modal,cert_data,values),vcv$comp$cert$certs_$_iter__29921.call(null,cljs.core.rest.call(null,s__29922__$2)));
 }
 } else {
 return null;
@@ -93,4 +93,4 @@ return iter__4529__auto__.call(null,cljs.core.vals.call(null,cljs.core.deref.cal
 });
 });
 
-//# sourceMappingURL=cert.js.map?rel=1663021280935
+//# sourceMappingURL=cert.js.map?rel=1663174946881
