@@ -135,12 +135,30 @@
   /* margin-left: calc(-0.5 * var(--bs-gutter-x)); */
 }
 
+@media only screen and (min-width: 1730px) {
+  .container-max-size {
+    /* column-width: 100%; */
+    width: 100%;
+    padding-right: 10em;
+    padding-left: 10em;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
 @media only screen and (min-width: 1200px) {
   .resize {
     max-width: 80vw;
     max-height: auto;
     margin: auto;
     display: block; /* remove extra space below image */
+  }
+}
+
+@media only screen and (min-width: 1146px) {
+  .mt-card {
+    margin-top: auto !important;
+    margin-bottom: auto !important;
   }
 }
 
