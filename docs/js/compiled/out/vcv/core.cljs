@@ -7,8 +7,7 @@
    [vcv.comp.footer :refer [footer]]))
 
 (defn app []
-  [:div.container
-   [header]
+  [:div.container-max-size   [header]
    [certs]
    [footer]])
 

@@ -35,8 +35,8 @@
 
 (defn full-cert
   [modal values]
-  [:div.modal.modal-xl (when (:active @modal) {:class "active"})
-   [:div.modal-dialog.modal-fullscreen
+  [:div.modal.modal-fullscreen (when (:active @modal) {:class "active"})
+   [:div.modal-fullscreen
     [:div.modal-content
      (let [{:keys [id header img title descr institution link date] :as values} @values]
        (mini-cert id header img title institution descr link date values modal))]]])

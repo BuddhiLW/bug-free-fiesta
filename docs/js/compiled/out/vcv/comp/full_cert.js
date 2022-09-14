@@ -17,19 +17,19 @@ return cljs.core.reset_BANG_.call(null,values,cljs.core.PersistentHashMap.fromAr
 })], null),"Back to main page"], null)], null)], null)], null);
 });
 vcv.comp.full_cert.full_cert = (function vcv$comp$full_cert$full_cert(modal,values){
-return new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div.modal.modal-xl","div.modal.modal-xl",-293886784),(cljs.core.truth_(new cljs.core.Keyword(null,"active","active",1895962068).cljs$core$IFn$_invoke$arity$1(cljs.core.deref.call(null,modal)))?new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"class","class",-2030961996),"active"], null):null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div.modal-dialog.modal-fullscreen","div.modal-dialog.modal-fullscreen",1439964213),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div.modal-content","div.modal-content",-83470844),(function (){var map__29917 = cljs.core.deref.call(null,values);
-var map__29917__$1 = (((((!((map__29917 == null))))?(((((map__29917.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__29917.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__29917):map__29917);
-var values__$1 = map__29917__$1;
-var id = cljs.core.get.call(null,map__29917__$1,new cljs.core.Keyword(null,"id","id",-1388402092));
-var header = cljs.core.get.call(null,map__29917__$1,new cljs.core.Keyword(null,"header","header",119441134));
-var img = cljs.core.get.call(null,map__29917__$1,new cljs.core.Keyword(null,"img","img",1442687358));
-var title = cljs.core.get.call(null,map__29917__$1,new cljs.core.Keyword(null,"title","title",636505583));
-var descr = cljs.core.get.call(null,map__29917__$1,new cljs.core.Keyword(null,"descr","descr",-574015785));
-var institution = cljs.core.get.call(null,map__29917__$1,new cljs.core.Keyword(null,"institution","institution",-70023072));
-var link = cljs.core.get.call(null,map__29917__$1,new cljs.core.Keyword(null,"link","link",-1769163468));
-var date = cljs.core.get.call(null,map__29917__$1,new cljs.core.Keyword(null,"date","date",-1463434462));
+return new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div.modal.modal-fullscreen","div.modal.modal-fullscreen",1118814203),(cljs.core.truth_(new cljs.core.Keyword(null,"active","active",1895962068).cljs$core$IFn$_invoke$arity$1(cljs.core.deref.call(null,modal)))?new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"class","class",-2030961996),"active"], null):null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div.modal-fullscreen","div.modal-fullscreen",-1334764343),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div.modal-content","div.modal-content",-83470844),(function (){var map__29666 = cljs.core.deref.call(null,values);
+var map__29666__$1 = (((((!((map__29666 == null))))?(((((map__29666.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__29666.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__29666):map__29666);
+var values__$1 = map__29666__$1;
+var id = cljs.core.get.call(null,map__29666__$1,new cljs.core.Keyword(null,"id","id",-1388402092));
+var header = cljs.core.get.call(null,map__29666__$1,new cljs.core.Keyword(null,"header","header",119441134));
+var img = cljs.core.get.call(null,map__29666__$1,new cljs.core.Keyword(null,"img","img",1442687358));
+var title = cljs.core.get.call(null,map__29666__$1,new cljs.core.Keyword(null,"title","title",636505583));
+var descr = cljs.core.get.call(null,map__29666__$1,new cljs.core.Keyword(null,"descr","descr",-574015785));
+var institution = cljs.core.get.call(null,map__29666__$1,new cljs.core.Keyword(null,"institution","institution",-70023072));
+var link = cljs.core.get.call(null,map__29666__$1,new cljs.core.Keyword(null,"link","link",-1769163468));
+var date = cljs.core.get.call(null,map__29666__$1,new cljs.core.Keyword(null,"date","date",-1463434462));
 return vcv.comp.full_cert.mini_cert.call(null,id,header,img,title,institution,descr,link,date,values__$1,modal);
 })()], null)], null)], null);
 });
 
-//# sourceMappingURL=full_cert.js.map?rel=1663174946864
+//# sourceMappingURL=full_cert.js.map?rel=1663189724763

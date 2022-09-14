@@ -7,7 +7,7 @@ goog.require('vcv.comp.cert');
 goog.require('vcv.comp.header');
 goog.require('vcv.comp.footer');
 vcv.core.app = (function vcv$core$app(){
-return new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div.container","div.container",72419955),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [vcv.comp.header.header], null),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [vcv.comp.cert.certs], null),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [vcv.comp.footer.footer], null)], null);
+return new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div.container-max-size","div.container-max-size",-564700500),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [vcv.comp.header.header], null),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [vcv.comp.cert.certs], null),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [vcv.comp.footer.footer], null)], null);
 });
 vcv.core.get_app_element = (function vcv$core$get_app_element(){
 return goog.dom.getElement("app");
@@ -26,4 +26,4 @@ return null;
 });
 vcv.core.mount_app_element.call(null);
 
-//# sourceMappingURL=core.js.map?rel=1663174946889
+//# sourceMappingURL=core.js.map?rel=1663189724789
