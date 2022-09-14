@@ -2,16 +2,20 @@
   (:require [vcv.helpers :as helpers]))
 
 (defn mini-cert
-  [id header img title descr link date values modal]
+  "Certification shown on modal"
+  [id header img title inst descr link date values modal]
   [:div.col-xxl.align-self-center.positive-relative
    [:div.card.shadow.mt-card {:key id}
-    [:h1.card-header.row.align-items
-     [:div.col header]
-     [:button.btn-close
-      {:on-click #(do (helpers/toggle-modal {:active false} modal)
-                      (reset! values {:id (str "cert-" (random-uuid)) :header "" :title ""
-                                      :img "" :institution "" :platform "" :descr "" :tags ""
-                                      :link "" :date ""}))}]]
+    [:h1.card-header.row-cert.align-items.align-middle.border-bottom
+     [:div.col.h1 header]
+     [:div.col.container-fluid [:span.test.text-center.w-100.display-6.card-title-font
+                                inst]]
+     [:div.col.d-flex.flex-row-reverse
+      [:button.btn-close.p-2
+       {:on-click #(do (helpers/toggle-modal {:active false} modal)
+                       (reset! values {:id (str "cert-" (random-uuid)) :header "" :title ""
+                                       :img "" :institution "" :platform "" :descr "" :tags ""
+                                       :link "" :date ""}))}]]]
 
     [:div.shadow-sm.mb-1.bg-body.rounded
      [:img.card-img-top.resize {:src img
@@ -34,6 +38,6 @@
   [:div.modal.modal-xl (when (:active @modal) {:class "active"})
    [:div.modal-dialog.modal-fullscreen
     [:div.modal-content
-     (let [{:keys [id header img title descr link date] :as values} @values]
-       (mini-cert id header img title descr link date values modal))]]])
+     (let [{:keys [id header img title descr institution link date] :as values} @values]
+       (mini-cert id header img title institution descr link date values modal))]]])
      ;; (full-cert-footer modal values)]]])

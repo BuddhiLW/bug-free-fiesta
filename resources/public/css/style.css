@@ -107,6 +107,12 @@
   display: inline-block;
 }
 
+.card-title-font {
+  font-family: "League Spartan", sans-serif;
+  font-weight: 100;
+  color: #3d3c3a;
+}
+
 .bg-main {
   background-color: rgb(241 245 249);
 }
@@ -116,14 +122,7 @@
 
 /* @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Dancing+Script:wght@400;500;600;700&family=Indie+Flower&family=Ms+Madi&family=Poiret+One&family=Satisfy&display=swap"); */
 .cert-font {
-  /* font-family: "Caveat", cursive; */
-  /* font-family: "Dancing Script", cursive; */
-  /* font-family: "Indie Flower", cursive; */
-  /* font-family: "Ms Madi", cursive; */
   font-family: "Poiret One", cursive;
-  /* font-family: "Satisfy", cursive; */
-  /* font-weight: 200; */
-  font-size: 6em;
 }
 
 .row-cert {
@@ -142,5 +141,13 @@
     max-height: auto;
     margin: auto;
     display: block; /* remove extra space below image */
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  .card-title-font {
+    font-family: "League Spartan", sans-serif;
+    font-size: 0.6em !important;
+    color: #3d3c3a;
   }
 }
